@@ -5,8 +5,8 @@ import com.example.grandchallenge.feature1.domain.models.User
 import java.util.logging.ErrorManager
 
 data class UserState(
-    val user: User?=null,
-    val albums: List<Album> = emptyList(),
-    val isLoading: Boolean? = false,
-    val errorManager: String? = null
+    var user: User?=null,
+    var albums: List<Album>? = emptyList(),
+    var isLoading: Boolean? = false,
+    var errorMessge: String? = null
 )
